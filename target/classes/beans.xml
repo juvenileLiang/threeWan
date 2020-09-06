@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<beans>
+    <bean id="printOne" class="com.els.model.PrintOne"></bean>
+    <bean id="printTwo" class="com.els.model.PrintTwo"></bean>
+    <bean id="computer" class="com.els.service.Computer">
+        <property name="output" ref="printTwo"></property>
+        <property name="name" value="这是个电脑"></property>
+    </bean>
+    <bean id="now" class="java.util.Date" scope="prototype"/>
+</beans>
